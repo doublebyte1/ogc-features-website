@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Agency - Start Bootstrap Theme
+        title OGC API Features
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -28,194 +28,181 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
-                a.navbar-brand(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
+                a.navbar-brand(href='#page-top') HOME
+                    //img(src='assets/img/navbar-logo.svg', alt='...')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#services') Services
+                            a.nav-link(href='#services') Why
                         li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                            a.nav-link(href='#portfolio') How
                         li.nav-item
-                            a.nav-link(href='#about') About
+                            a.nav-link(href='#about') In Action
                         li.nav-item
-                            a.nav-link(href='#team') Team
+                            a.nav-link(href='#team') Get Started
                         li.nav-item
-                            a.nav-link(href='#contact') Contact
+                            a.nav-link(href='#contact') Get Involved
+                a(href='https://github.com/opengeospatial/ogcapi-features')
+                    img(style='position: absolute; top: 0; right: 0; border: 0;' src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png' alt='Fork me on GitHub')
+
+
+
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Welcome To Our Studio!
-                .masthead-heading.text-uppercase It's Nice To Meet You
+                .masthead-heading.text-uppercase OGC API Features
+                .masthead-subheading Querying geospatial data on the web
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
+                a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Get Started
 
         // Services
         section#services.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Why?
+                    h3.section-subheading.text-muted Main reasons for using OGC API Features.
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
+                            i.fas.fa-plug.fa-stack-1x.fa-inverse
+                        h4.my-3 Interoperable
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | Ensure that your application can read data from existing and new sources without changing how you communicate with them. Ensure that the data you share can be accessed by different clients, without having to share details of your implementation.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
+                            i.fas.fa-laptop-code.fa-stack-1x.fa-inverse
+                        h4.my-3 Based on Best Practices
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | This API is based on the technologies and vocabularies that make up the web today, such as REST, OpenAPI, JSON and HTML. This should ensure a smooth learning curve for any web developer, even if they are not familiar with GIS.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
+                            i.fas.fa-layer-group.fa-stack-1x.fa-inverse
+                        h4.my-3 Supported on Existing Products
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | You can start using the OGC API Features specification today, by tapping into one of the existing server or client implementations.
 
         // Portfolio Grid
         section#portfolio.page-section.bg-light
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
+                    h2.section-heading.text-uppercase Overview
+                    h3.section-subheading.text-muted OGC API Features provides access to collections of geospatial data.
+                    img(src='assets/img/overview.png', title='Source: https://demo.ldproxy.net/daraa', alt='..')
+                .text-left
+                    ul
+                        li
+                            h4 Get collections
+                            p.text-muted Lists the collections of data on the server that can be queried, and each describes basic information about the geospatial data collection, like its id and description, as well as the spatial and temporal extents of all the data contained.
+                        li
+                            h4 Get items
+                            p.text-muted Requests all the data in a given collection. The response format (typically HTML or a GeoJSON feature collection, but GML is supported, too, and extensions can easily supply others) is determined using HTTP content negotiation.
+                        li
+                            h4 Get feature
+                            p.text-muted Returns a single 'feature' - something in the real-world (a building, a stream, a county, etc.) that typically is described by a geometry plus other properties. This provides a stable, canonical URL to link to the 'thing'.
+
+                p.text-muted If you are interested in finding out how-to use other coordinate reference systems, you can 
+                    a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/extensions/crs' target="_blank") read this
+                    |. You can also read 
+                    a(href='https://docs.ogc.org/is/17-069r3/17-069r3.html' target="_blank") part 1
+                    | and 
+                    a(href='https://docs.ogc.org/is/18-058/18-058.html' target="_blank") part 2
+                    | of the spec, or explore it using 
+                    a(href='https://app.swaggerhub.com/apis/cportele/ogcapi-features-1-example1/1.0.0' target="_blank") Swagger
+                    |.
+                    
 
         // About
         section#about.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
+                    h2.section-heading.text-uppercase See it In Action
+                    h3.section-subheading.text-muted This is a list of demo server implementations, that provide sample data. Please
+                        a(href='mailto:jsimoes@ogc.org') get in touch
+                        |, if you would like to add your server to the list.
+                       
 
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/ldproxy1.png', alt='...')
+                            h4 Vineyards in Rhineland-Palatinate, Germany
+                            p.text-muted Powered by Ldproxy
+                            p.text-muted Have you ever wondered where the wine that you are drinking comes from? If the wine comes from the wine-growing regions Mosel, Nahe, Rheinhessen, Pfalz, Ahr, or Mittelrhein you can find this information in this API.
+                            a.btn.btn-dark.btn-social.mx-2(href='https://demo.ldproxy.net/vineyards' title='Landing page' target="_blank")
+                                i.fa.fa-link
+                            a.btn.btn-dark.btn-social.mx-2(href='https://demo.ldproxy.net/vineyards/api/' title='OpenAPI definition' target="_blank")
+                                i.fa.fa-code
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/pygeoapi.png', alt='...')
+                            h4 Portuguese Points of Interest
+                            p.text-muted Powered by Pygeoapi
+                            p.text-muted Portuguese Points of Interest obtained from OpenStreetMap. Dataset includes Madeira and Azores islands. Uses GeoPackage backend via OGR provider.
+                            a.btn.btn-dark.btn-social.mx-2(href='https://demo.pygeoapi.io/master/collections/ogr_gpkg_poi' title='Landing page' target="_blank")
+                                i.fa.fa-link
+                            a.btn.btn-dark.btn-social.mx-2(href='https://demo.pygeoapi.io/master/openapi?f=html' title='OpenAPI definition' target="_blank")
+                                i.fa.fa-code
+
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/cubewerx.png', alt='...')
+                            h4 Zaatari Refugee Camp مخيم الزعتري
+                            p.text-muted Powered by CubeWerx
+                            p.text-muted Zaatari is a refugee camp in Jordan, located 10 kilometres east of Mafraq, which has gradually evolved into a permanent settlement; it is the world’s largest camp for Syrian refugees.
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.pvretano.com/cubewerx/cubeserv/default/ogcapi/zaatari' title='Landing page' target="_blank")
+                                i.fa.fa-link
+                            a.btn.btn-dark.btn-social.mx-2(href='https://www.pvretano.com/cubewerx/cubeserv/default/ogcapi/zaatari/api?f=html' title='OpenAPI definition' target="_blank")
+                                i.fa.fa-code
+
+
+        section#implementations.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Use it
+                    h3.section-subheading.text-muted Do you want to start using OGC API Features? Before starting to implement the spec, please take a look at the existing implementations. An extensive list can be found
+                        a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations') here
+                    
+
+        section#adopters.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Who else is using it?
+                    h3.section-subheading.text-muted These are some organizations who are using OGC API Features.
+
+
+                div.py-5
+                    .container
+                        .row.align-items-center
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...')
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...')
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...')
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...')
+
+                    //img(src='assets/img/canada.png' height="100", alt='..')
+                    //img(src='assets/img/esri.png' height="100", alt='..')
+                    //img(src='assets/img/os.png' height="100", alt='..')
+                    
         // Team
         section#team.page-section.bg-light
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Our Amazing Team
+                    h2.section-heading.text-uppercase Get Started
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 .row
                     .col-lg-4
@@ -256,22 +243,7 @@ html(lang='en')
                         p.large.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
-        // Clients
-        div.py-5
-            .container
-                .row.align-items-center
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...')
+ 
 
         // Contact
         section#contact.page-section
