@@ -85,7 +85,8 @@ html(lang='en')
                             i.fas.fa-layer-group.fa-stack-1x.fa-inverse
                         h4.my-3 Supported on Existing Products
                         p.text-muted
-                            | You can start using the OGC API Features specification today, by tapping into one of the existing server or client implementations.
+                            | You can start using the OGC API Features specification today, by tapping into one of the 
+                            a(href='#implementations') existing server or client implementations.
 
         // Portfolio Grid
         section#portfolio.page-section.bg-light
@@ -167,9 +168,14 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase Use it
-                    h3.section-subheading.text-muted Do you want to start using OGC API Features? Before starting to implement the spec, please take a look at the existing implementations. An extensive list can be found
-                        a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations') here
-                    
+                    h3.section-subheading.text-muted Do you want to start using OGC API Features? Before starting to implement the spec, please take a look at the existing implementations.
+                    // An extensive list can be found
+                    //    a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations') here
+
+                    span.fa-stack.fa-4x
+                        a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations')
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-rocket.fa-stack-1x.fa-inverse
 
         section#adopters.page-section
             .container
