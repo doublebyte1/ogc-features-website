@@ -168,14 +168,69 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase Use it
-                    h3.section-subheading.text-muted Do you want to start using OGC API Features? Before starting to implement the spec, please take a look at the existing implementations.
-                    // An extensive list can be found
-                    //    a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations') here
 
-                    span.fa-stack.fa-4x
-                        a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations')
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-rocket.fa-stack-1x.fa-inverse
+                    h3.section-subheading.text-muted Do you want to start using OGC API Features? Before starting to implement the spec, please take a look at the existing implementations. 
+        
+
+
+                    <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th scope="col" colspan="5" class="table-dark">Servers by Technology</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row" rowspan="2" class="table-info">Java <i class="fab fa-java"></i></th>
+                        <td>Ldproxy</td>
+                        <td title="Github repository"><a href="https://github.com/interactive-instruments/ldproxy"><i class="fab fa-github"></i></a></td>
+                        <td title="Docker image"><a href="https://hub.docker.com/r/iide/ldproxy/"><i class="fab fa-docker"></i></a></td>
+                        <td title="Tutorial/Example"><a href="https://github.com/interactive-instruments/ldproxy/tree/master/demo/vineyards"><i class="fas fa-graduation-cap"></i>/<i class="fas fa-code"></i></a></td>
+                        </tr>
+                        <tr>
+                        <td>Geoserver</td>
+                        <td title="Github repository"><a href="https://github.com/geoserver/geoserver"><i class="fab fa-github"></i></a></td>
+                        <td title="Docker image"><a href="https://hub.docker.com/r/oscarfonts/geoserver"><i class="fab fa-docker"></i></a></td>
+                        <td title="Tutorial/Example"><a href="https://docs.geoserver.org/latest/en/user/community/ogc-api/install.html"><i class="fas fa-graduation-cap"></i>/<i class="fas fa-code"></i></a></td>                
+                        </tr>
+                        <tr>
+                        <th scope="row" rowspan="2" class="table-info">Python <i class="fab fa-python"></i></th>
+                        <td>Pygeoapi</td>
+                        <td title="Github repository"><a href="https://github.com/geopython/pygeoapi"><i class="fab fa-github"></i></a></td>
+                        <td title="Docker image"><a href="https://hub.docker.com/r/geopython/pygeoapi"><i class="fab fa-docker"></i></a></td>
+                        <td title="Tutorial/Example"><a href="https://docs.pygeoapi.io/en/latest/"><i class="fas fa-graduation-cap"></i>/<i class="fas fa-code"></i></a></td>                
+                        </tr>
+                        <tr>
+                        <td>GeoPortal</td>
+                        <td title="Github repository"><a href="https://github.com/mrmap-community/GeoPortal.rlp"><i class="fab fa-github"></i></a></td>
+                        <td></td>
+                        <td></td>                
+                        </tr>                        
+                        <tr>
+                        <th scope="row" class="table-info">JavaScript <i class="fab fa-js"></i></th>
+                        <td>Sofp</td>
+                        <td title="Github repository"><a href="https://github.com/vaisala-oss/sofp-core"><i class="fab fa-github"></i></a><a href="https://github.com/vaisala-oss/sofp-lib"><i class="fab fa-github"></i></a></td>
+                        <td title="Docker image"><a href="https://hub.docker.com/r/sofp/core"><i class="fab fa-docker"></i></a><a href="https://hub.docker.com/r/sofp/example-backend"><i class="fab fa-docker"></i></a></td>
+                        <td title="Tutorial/Example"><a href="https://github.com/vaisala-oss/sofp-example-backend"><i class="fas fa-graduation-cap"></i>/<i class="fas fa-code"></i></a></td>                
+                        </tr>
+                        <tr>
+                        <th scope="row" class="table-info">C++</th>
+                        <td>QGIS Server</td>
+                        <td title="Github repository"><a href="https://github.com/qgis/QGIS/"><i class="fab fa-github"></i></a></td>
+                        <td title="Docker image"><a href="https://hub.docker.com/r/kartoza/qgis-server"><i class="fab fa-docker"></i></a></td>
+                        <td title="Tutorial/Example"><a href="https://docs.qgis.org/testing/en/docs/server_manual/services.html#wfs3-ogc-api-features"><i class="fas fa-graduation-cap"></i>/<i class="fas fa-code"></i></a></td>                
+                        </tr>                        
+                    </tbody>
+                    </table>
+
+                    h3.section-subheading.text-muted An extensive list can be found
+                        a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations' title='Implementations' target="_blank") here
+                        |.
+
+                    //- span.fa-stack.fa-4x
+                    //-     a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/implementations')
+                    //-         i.fas.fa-circle.fa-stack-2x.text-primary
+                    //-         i.fas.fa-rocket.fa-stack-1x.fa-inverse
 
         section#adopters.page-section
             .container
@@ -215,26 +270,28 @@ html(lang='en')
                 ul.timeline
                     li
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/elearning.jpeg', alt='...')
+                            a(href='http://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-index.html' title='E-learning' target="_blank")
+                                img.rounded-circle.img-fluid(src='assets/img/about/elearning.jpeg', alt='...')
                         .timeline-panel
                             .timeline-heading
                                 h4.subheading Complete an online training
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                            a.btn.btn-dark.btn-social.mx-2(href='http://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-index.html' title='E-learning' target="_blank")
+                                    | If you are familiar with web services and APIs, and want to have an overview of the OGC API - Features standard, this training is for you.
+                            //a.btn.btn-dark.btn-social.mx-2(href='http://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-index.html' title='E-learning' target="_blank")
                                 i.fa.fa-link
 
                     li.timeline-inverted
                         .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/spring.jpeg', alt='...')
+                            a(href='https://github.com/opengeospatial/OGC-API-Sprint-September-2020/blob/master/docs/Draft_Spring_Guide_for_OGC_API_Features/Draft_Spring_Guide_for_OGC_API_Features.adoc' title='E-learning' target="_blank")
+                                img.rounded-circle.img-fluid(src='assets/img/about/spring.jpeg', alt='...')
                         .timeline-panel
                             .timeline-heading
                                 h4.subheading Implement a server in Java
                             .timeline-body
                                 p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                            a.btn.btn-dark.btn-social.mx-2(href='https://github.com/opengeospatial/OGC-API-Sprint-September-2020/blob/master/docs/Draft_Spring_Guide_for_OGC_API_Features/Draft_Spring_Guide_for_OGC_API_Features.adoc' title='E-learning' target="_blank")
+                                    |  If you are a Java Spring developer and want to work with API definition files from the OGC API - Features standard, you can follow this guide.
+                            //a.btn.btn-dark.btn-social.mx-2(href='https://github.com/opengeospatial/OGC-API-Sprint-September-2020/blob/master/docs/Draft_Spring_Guide_for_OGC_API_Features/Draft_Spring_Guide_for_OGC_API_Features.adoc' title='E-learning' target="_blank")
                                 i.fa.fa-link
                     //- li
                     //-     .timeline-image
@@ -259,11 +316,9 @@ html(lang='en')
                     li.timeline-inverted
                         .timeline-image
                             h4
-                                | Be Part
+                                | Get
                                 br
-                                | Of Our
-                                br
-                                | Story!
+                                | Involved!
 
 
         // Contact
