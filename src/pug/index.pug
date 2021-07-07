@@ -323,92 +323,34 @@ html(lang='en')
 
         // Contact
         section#contact.page-section
-            .container
+             .container
                 .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Get Involved
+                    h3.section-subheading.text-muted Tell us what’s working well, what you want to see added or improved, and find out about new updates.
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fab.fa-stack-overflow.fa-stack-1x.fa-inverse
+                        h4.my-3 Stack Overflow
+                        p.text-muted
+                            | Engage with your peers and ask questions about OGC API Features using the tag 'OGC API Features'
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fab.fa-discord.fa-stack-1x.fa-inverse
+                        h4.my-3 Discord
+                        p.text-muted
+                            | Chat with other TypeScript users in the OGC Community channel.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-users.fa-stack-1x.fa-inverse
+                        h4.my-3 Events
+                        p.text-muted
+                            | You can start using the OGC API Features specification today, by tapping into one of the 
+                            a(href='#implementations') existing server or client implementations.
 
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
-
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
-
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
-
-                                // Name input
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Your Name *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            .form-group
-
-                                // Email address input
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Your Email *',
-                                    data-sb-validations='required,email'
-                                )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            .form-group.mb-md-0
-
-                                // Phone number input
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='Your Phone *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
-
-                                // Message input
-                                textarea#message.form-control(
-                                    placeholder='Your Message *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                    // Submit success message
-                    //
-                    // This is what your users will see when the form
-                    // has successfully submitted
-
-                    #submitSuccessMessage.d-none
-                        .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                    // Submit error message
-                    //
-                    // This is what your users will see when there is
-                    // an error submitting the form
-
-                    #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
-
-                    // Submit Button
-                    .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
         footer.footer.py-4
