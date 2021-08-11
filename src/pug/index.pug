@@ -251,8 +251,7 @@ html(lang='en')
                         <tr>
                         <td>Pygdal</td>
                         <td title="Github repository"><a href="https://github.com/nextgis/pygdal"><i class="fab fa-github"></i></a></td>
-                        <td>Check <a href="https://gdal.org/drivers/vector/oapif.html">GDAL's documentation</a>.</td>
-                        <td></td>                
+                        <td colspan="2">Check <a href="https://gdal.org/drivers/vector/oapif.html">GDAL's documentation</a>.</td>          
                         </tr>                        
                         <tr>
                         <th scope="row" class="table-info">JavaScript <i class="fab fa-js"></i></th>
@@ -278,11 +277,45 @@ html(lang='en')
                     //-         i.fas.fa-circle.fa-stack-2x.text-primary
                     //-         i.fas.fa-rocket.fa-stack-1x.fa-inverse
 
+
+
         section#adopters.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Who else is using it?
-                    h3.section-subheading.text-muted These are some organizations who are using OGC API Features.
+                    h2.section-heading.text-uppercase Who is behind OGC API Features?
+                p.text-muted 
+                    | OGC API Features is developed through a member-driven consensus process, which creates royalty free, publicly available, open geospatial standards.
+                    | The
+                    a(href="https://www.ogc.org/") Open Geospatial Consortium (OGC)
+                    | is the organisation which drives this process. It is supported by an active community of members, with involvement from a large range of organizations. <a href="https://www.ogc.org/ogc/join/levels">Join OGC today!</a>
+
+                div.py-5
+                    .container
+                        .row.align-items-center
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...')
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...')
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/Amazon_Web_Services_Logo.svg', alt='...')
+                            .col-md-3.col-sm-6.my-3
+                                a(href='#!')
+                                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/Oracle_logo.svg', alt='...')
+                            //- .col-md-3.col-sm-6.my-3
+                            //- a(href='#!')
+                            //-     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/Ordnance_Survey_2015_Logo.svg', alt='...')                               
+                            //- .col-md-3.col-sm-6.my-3
+                            //- a(href='#!')
+                            //-     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/esri.svg', alt='...')  
+
+        //- section#adopters.page-section
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Who else is using it?
+        //-             h3.section-subheading.text-muted These are some organizations who are using OGC API Features.
 
 
                 div.py-5
@@ -400,14 +433,6 @@ html(lang='en')
                         p.text-muted
                             | Found a bug, or want to give us constructive feedback? 
 
-                    p.text-muted
-                        | OGC API Features is developed through a member-driven consensus process, which creates royalty free, publicly available, open geospatial standards.
-                        | The
-                        a(href="https://www.ogc.org/") Open Geospatial Consortium (OGC)
-                        |, is the member organisation which drives this process. 
-                        a(href="https://www.ogc.org/ogc/join/levels") Join OGC today!
-
-                        //img(src='assets/img/OGC_logo.png', width="30%" alt='...')
 
         // Footer
         footer.footer.py-4
